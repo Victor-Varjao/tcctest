@@ -1,0 +1,138 @@
+.quiz-container{
+    box-shadow: 0 80px 20px rgba(28, 30, 145, 0.185);
+}
+
+.custom-checkbox input:checked + label:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: rgb(255, 72, 0);
+    background-position: center;
+    border: none;
+    padding: 0.5px;
+  }
+
+/* Estilos para o conteúdo */
+.main-content {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Estilos para o container da propaganda */
+.promo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto; 
+    margin-bottom: 20%;
+    margin-top: 15%;
+}
+
+/* Estilos para a imagem da propaganda */
+.promo-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para o texto da propaganda */
+.promo-text {
+    margin-top: 20px;
+}
+
+.promo-text h2 {
+    font-size: 25px;
+    color: #333;
+}
+
+.promo-text p {
+    font-size: 39px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Estilos para o botão de cadastro */
+.promo-button {
+    display: inline-block;
+    padding: 20px 25px;
+    background-color: #ffb400;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 23px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.promo-button:hover {
+    background-color: #eba606;
+}
+
+/* Estilos para o footer */
+.footer-quiz {
+    background-color: #ccc;
+    color: #000;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.footer-quiz div {
+    background-color: #ccc;
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    .footer-quiz {
+        padding: 15px 0;
+    }
+
+    .footer-quiz div {
+        padding: 8px 0; 
+    }
+
+    .promo-text h2 {
+        font-size: 20px;
+    }
+
+    .promo-text p {
+        font-size: 14px;
+    }
+
+    .promo-button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-quiz {
+        padding: 10px 0; 
+    }
+
+    .footer-quiz div {
+        padding: 5px 0; 
+    }
+
+    .promo-text h2 {
+        font-size: 18px;
+    }
+
+    .promo-text p {
+        font-size: 12px;
+    }
+
+    .promo-button {
+        padding: 6px 12px;
+    }
+}

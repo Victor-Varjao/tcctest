@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>NewTech. | Quiz - Furacões</title>
+    <link rel="shortcut icon" href="imagens/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="furacoes-quiz.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz-style.css">
+    <link rel="stylesheet" href="body.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css">
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="w3-top header-color" id="">
+            <div class="w3-bar w3-wide w3-padding-large">
+                <a href="index.html" class="w3-bar-item w3-button2"><b class="b_new">NewTech.</b><e>Questions</e></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="maremoto-quiz.html" class="button">Maremotos</a>
+        <a href="incend-quiz.html" class="button">Incêndios</a>
+        <a href="terremo-quiz.html" class="button">Terremotos</a>
+    </div>
+
+    <div class="quiz-container">
+        <div id="quiz-content">
+            <h1><b>Tema Furacões</b></h1>
+            <p id="question"></p>
+            <ul id="options" class="custom-checkbox">
+                <li>
+                    <input type="radio" name="option" value="1" id="option1">
+                    <label for="option1" id="option1-label"></label>
+                </li>
+                <li>
+                    <input type="radio" name="option" value="2" id="option2">
+                    <label for="option2" id="option2-label"></label>
+                </li>
+                <li>
+                    <input type="radio" name="option" value="3" id="option3">
+                    <label for="option3" id="option3-label"></label>
+                </li>
+            </ul>
+            <div class="button-check">
+                <button id="submit-btn">
+                    Responder <i class="gg-check-o"></i>
+                </button>
+            </div>
+            <p id="timer">
+                Tempo restante: <span id="timer-countdown">120</span> segundos.
+            </p>
+        </div>
+
+        <div class="logout-icon">
+            <a href="index-quiz.html">
+                <i class="gg-log-out"></i>
+            </a>
+        </div>
+
+        <div id="score-container" style="display: none;">
+            <h2>Quiz encerrado!</h2>
+            <p>Você acertou <span id="score"></span> de <span id="total-questions"></span> perguntas.</p>
+            <button id="retry-btn" style="display: none;">Tentar novamente</button>
+        </div>
+    </div>
+
+    <div class="promo-container">
+        <div class="promo-image">
+            <img src="imagens/ptcc-removebg.png" alt="Imagem do Aplicativo">
+        </div>
+        <div class="promo-text">
+            <h2>Aproveite os benefícios!</h2>
+            <p>Faça seu cadastro em nossa plataforma, é grátis :)</p>
+            <a href="index-login.html" class="promo-button">Clique Aqui</a>
+        </div>
+    </div>
+
+    <footer class="footer-quiz">
+        <div>
+            <p>&copy; 2024 NewTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="furacoes-quiz.js"></script>
+</body>
+
+</html>

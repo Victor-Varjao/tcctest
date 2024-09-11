@@ -1,0 +1,155 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+button,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.w3-image2 {
+  max-width: 100%;
+  margin-top: 0px;
+  height: auto;
+}
+
+.link-kluster {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 9%;
+  height: auto;
+  cursor: pointer;
+}
+
+.link-kluster img {
+  width: 110%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.link-kluster::after {
+  content: "Faça seu cadastro e fique por dentro de tudo!";
+  width: 104%;
+  white-space: normal;
+  position: absolute;
+  bottom: 90%;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.link-kluster:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.link-kluster:hover img {
+  filter: brightness(0.8);
+}
+
+.button-menu {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button-menu a {
+  position: relative;
+  width: calc(38% - 120px);
+  height: 100px;
+  font-size: 34px;
+  margin: 20px 30px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #01A2B2, #0294a1);
+  color: white;
+  text-shadow: black 1px 2px 3px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px 10px;
+  box-shadow: 0 10px 15px rgba(96, 185, 219, 0.7);
+  text-align: center;
+  line-height: 100px;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.button-menu a:hover {
+  background: linear-gradient(135deg, #008591e5, #0096a3);
+  box-shadow: 0 10px 15px rgba(96, 185, 219, 0.7);
+}
+
+.button-menu a:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.descri-quiz {
+  text-align: center;
+  margin: 20px auto;
+  margin-top: 50px;
+  width: 50%;
+  max-width: 44%;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .button-menu {
+    flex-direction: column;
+  }
+
+  .button-menu a {
+    width: calc(90% - 40px);
+    margin: 10px 0;
+    font-size: 28px;
+    height: auto;
+    line-height: normal;
+    padding: 20px;
+  }
+
+  .descri-quiz {
+    width: 80%;
+    max-width: 90%;
+  }
+
+  .link-kluster {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-menu a {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .descri-quiz {
+    width: 90%;
+    max-width: 100%;
+  }
+}

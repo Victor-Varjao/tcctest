@@ -1,0 +1,95 @@
+.info-text {
+    max-width: 80%; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    background-color: #f2f2f200;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+.h3-contato {
+    font-size: 34px;
+    color: #101010;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajusta o espaçamento entre os itens */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.flex-item {
+    flex: 1 1 calc(100% / 5 - 20px); /* Divide o espaço igualmente entre os itens, ajustando para a margem */
+    box-sizing: border-box;
+    background-color: #ffffff00;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.flex-item img:hover {
+    transform: scale(1.05);
+}
+
+.flex-item h3 {
+    font-size: 16px;
+    color: #343a40;
+    margin-top: 10px;
+}
+
+.flex-item p {
+    font-size: 14px;
+    color: #5f676d;
+}
+
+.name {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.normal-font {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6c757d;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .flex-item {
+        flex: 1 1 calc(100% / 3 - 20px); /* 3 itens por linha */
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 1 1 calc(100% / 2 - 20px); /* 2 itens por linha */
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-item {
+        flex: 1 1 100%; /* 1 item por linha */
+    }
+
+    .h3-contato {
+        font-size: 28px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .info-text {
+        padding: 15px; /* Ajusta o padding para telas menores */
+    }
+}

@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.card {
+    background-color: #eae9e9;
+    flex: 1 0 21%; 
+
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 #a1a9b354;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 20px 10px 20px;
+    transition: box-shadow  0.3s ease-in-out;
+    height: 500px;
+    min-width: 300px;
+    max-width: 360px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 20px;
+}
+.card:hover .hover-text {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card .color-banner {
+    height: 15px;
+    width: calc(100% + 30px);
+    position: relative;
+    left: -15px;
+    top: -15px;
+}
+
+.card .color-banner.red {
+    background-color: red;
+}
+
+.next-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 120px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.next-button:hover {
+    background-color: #444;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.next-icon {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    bottom: 80%;
+    right: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.next-icon:hover {
+    transform: translateX(5px);
+}
+
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-basis: 45%; 
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex-basis: 100%; 
+        margin: 10px 0;
+    }
+
+    .next-icon {
+        right: 5px; 
+        font-size: 16px;
+    }
+}
